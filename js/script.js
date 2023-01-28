@@ -1,6 +1,6 @@
-  
-document.addEventListener("DOMContentLoaded", () => {
-    const CURRENT_YEAR = new Date().getFullYear();
-    const YEAR_ELEMENT = document.querySelector('.footer__year');
-    YEAR_ELEMENT.textContent = CURRENT_YEAR.getFullYear();
-  });
+let date=new Date();  
+let day=date.getDate();  
+let month=date.getMonth()+1;  
+let year=date.getFullYear();  
+
+document.getElementById('time').innerHTML=day+"/"+month+"/"+year;  
